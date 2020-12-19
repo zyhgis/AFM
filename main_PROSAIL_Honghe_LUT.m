@@ -100,7 +100,7 @@ for tts=attslist
                                     hdband4=sum((hdresv(441:474).*SRF(441:474)))/sum(SRF(441:474));                            
                                     %%
                                     abs_dif=1-rddt-(1-rsoil+tdd.*rsoil).*tdd./(1-rddt.*rsoil); %Ad
-                                    abs_dir=1-rdot-(1-rsoil+tdd.*rsoil).*(tss+tsd)./(1-rddt.*rsoil); %As
+                                    abs_dir=1-rsdt-(1-rsoil+tdd.*rsoil).*(tss+tsd)./(1-rddt.*rsoil); %As
                                     fPARdif=abs_dif(1:301,1);
                                     fPARdir=abs_dir(1:301,1);
                                     fPARdif1=mean(abs_dif(1:301,1));
